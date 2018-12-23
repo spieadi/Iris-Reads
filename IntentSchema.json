@@ -1,0 +1,109 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "iris reads",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RandomQuote",
+                    "slots": [],
+                    "samples": [
+                        "random quote",
+                        "tell me a random quote",
+                        "tell me a quote",
+                        "give me a quote",
+                        "random quotation"
+                    ]
+                },
+                {
+                    "name": "AuthorQuote",
+                    "slots": [
+                        {
+                            "name": "author",
+                            "type": "LIST_OF_AUTHORS"
+                        }
+                    ],
+                    "samples": [
+                        "get a quotation from {author}",
+                        "get a quote from {author}",
+                        "get a quote of {author}",
+                        "I need a quote by {author}",
+                        "what did {author} say",
+                        "tell me a quotation from {author}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_AUTHORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Gandhi ji"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mahatma Gandhi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jeff Bezos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jeff "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lincoln"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Abe Lincoln"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Abraham Lincoln"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Einstein"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Albert Einstein"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
